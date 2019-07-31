@@ -1,0 +1,26 @@
+.header-section {
+    margin: 0;
+    background-color: #215e54;
+    color: #059e88;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-section__title {
+    margin: 0;
+}
+.user-menu {
+    display: flex;
+    flex-direction: row;
+}
+.stadistics-menu {
+    width: 50px;
+    height: 100vh;
+    background-color: #215e54;
+    color: #059e88;
+}
+.stadistics-menu__list {
+    list-style: none;
+    padding: 10px;
+}
+
