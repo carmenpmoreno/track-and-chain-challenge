@@ -1,7 +1,9 @@
+@import '../scss/variables';
+
 .header-section {
     margin: 0;
-    background-color: #215e54;
-    color: #059e88;
+    background-color: $darkColor;
+    color: $ligthColor;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,14 +15,58 @@
     display: flex;
     flex-direction: row;
 }
-.stadistics-menu {
+.main-section {
+    display: flex;
+    flex-direction: row;
+}
+.charts-menu {
     width: 50px;
     height: 100vh;
-    background-color: #215e54;
-    color: #059e88;
+    background-color: $darkColor;
+    color: $ligthColor;
 }
-.stadistics-menu__list {
+.charts-menu__list {
     list-style: none;
     padding: 10px;
 }
+.charts-section {
+    background-color: $mainColor;
+    height: 100vh;
+    width: 100vw;
+}
+.charts-article {
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.charts-article__image-wrapper {
+    height: 135px;
+}
+.charts-article__default-image {
+    width: 216px;
+}
+.charts-article__line {
+    background-color: $ligthColor;
+    height: 10px;
+    width: 100px;
+    animation-name: intro;
+    animation-duration: 2s;
+}
+.charts-article__circle {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: $ligthColor;
+}
 
+@keyframes intro {
+    from {
+        width: 0;
+    }
+  
+    to {
+        width: 100px;
+    }
+}
