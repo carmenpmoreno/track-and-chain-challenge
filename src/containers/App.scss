@@ -20,6 +20,8 @@
     flex-direction: row;
 }
 .charts-menu {
+    position: absolute;
+    z-index: 1;
     width: 50px;
     height: 100vh;
     background-color: $darkColor;
@@ -35,6 +37,7 @@
     width: 100vw;
 }
 .charts-article {
+    margin-top: 100px;
     height: 300px;
     width: 100vw;
     display: flex;
@@ -43,16 +46,39 @@
 }
 .charts-article__image-wrapper {
     height: 135px;
+    // position: absolute;
+    // left: 330px;
+    // top:80px;
 }
 .charts-article__default-image {
     width: 216px;
+    // animation-name: intro-image;
+    // animation-duration: 2s;
 }
 .charts-article__line {
     background-color: $ligthColor;
-    height: 10px;
+    height: 5px;
     width: 100px;
-    animation-name: intro;
-    animation-duration: 2s;
+    animation-name: intro-first;
+    animation-duration: 2.5s;
+    &.second {
+        width: 50px;
+        animation-name: intro-second;
+    }
+}
+.charts-article__diagonal {
+    background-color: $ligthColor;
+    transform: rotate(45deg) translate(20px, -20px);
+    height: 150px;
+    width: 150px;
+    animation-name: intro-diagonal;
+}
+.charts-article__diagonal-second{
+    background-color: $mainColor;
+    transform: rotate(45deg) translate(-80px, 80px);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    height: 150px;
+    width: 150px;
+    // animation-name: intro-diagonal-second;
 }
 .charts-article__circle {
     border-radius: 50%;
@@ -61,7 +87,7 @@
     background-color: $ligthColor;
 }
 
-@keyframes intro {
+@keyframes intro-first {
     from {
         width: 0;
     }
@@ -70,3 +96,24 @@
         width: 100px;
     }
 }
+@keyframes intro-second {
+    from {
+        width: 0;
+    }
+  
+    to {
+        width: 50px;
+    }
+}
+// @keyframes intro-image {
+//     from {
+//         width: 0;
+//         height: 0;
+//         opacity: 0;
+//     }
+  
+//     to {
+//         opacity: 0.3;
+//         width: 216px;
+//     }
+// }

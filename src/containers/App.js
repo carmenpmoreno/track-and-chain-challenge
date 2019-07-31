@@ -36,9 +36,14 @@ function App() {
         </nav>
         <section className="charts-section">
           <article className="charts-article">
-            <div className="charts-article__line"></div>
+            <div className="charts-article__line first"></div>
             <div className="charts-article__circle"></div>
-            <div className="charts-article__line"></div>
+            <div className="charts-article__line second"></div>
+
+            {/* <div className="charts-article__circle"></div>
+            <div className="charts-article__diagonal"></div>
+            <div className="charts-article__diagonal-second"></div> */}
+            
             <div className="charts-article__image-wrapper">
               <img className="charts-article__default-image" src={barChartImage} alt="default Bar Chart" />
             </div>
