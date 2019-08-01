@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.scss';
-import icoMenu from '../images/ico-menu.svg';
-import barChartImage from '../images/bar-chart.png';
+import icoMenu from '../icons/ico-menu.svg';
+import barDefaultImage from '../images/bar-chart.png';
+import temperatureDefaultImage from '../images/temperature-changes-chart.png';
+import dataTableDefaultImage from '../images/data-table.png';
 
 function App() {
   return (
@@ -35,19 +37,36 @@ function App() {
           </ul>
         </nav>
         <section className="charts-section">
-          <article className="charts-article">
+
+        <article className="charts-article-horizontal item-1">
+            <div className="charts-article__line-horizontal first-horizontal"></div>
+            <div className="charts-article__circle"></div>
+            <div className="charts-article__line-horizontal second-horizontal"></div>
+            <div className="charts-article__image-wrapper">
+              <img className="charts-article__default-image" src={dataTableDefaultImage} alt="default Table Chart" />
+            </div>
+          </article>
+
+          <article className="charts-article item-2">
             <div className="charts-article__line first"></div>
             <div className="charts-article__circle"></div>
             <div className="charts-article__line second"></div>
-
-            {/* <div className="charts-article__circle"></div>
-            <div className="charts-article__diagonal"></div>
-            <div className="charts-article__diagonal-second"></div> */}
-            
             <div className="charts-article__image-wrapper">
-              <img className="charts-article__default-image" src={barChartImage} alt="default Bar Chart" />
+              <img className="charts-article__default-image" src={barDefaultImage} alt="default Bar Chart" />
             </div>
           </article>
+
+          <article className="charts-article item-3">
+            <div className="charts-article__line first"></div>
+            <div className="charts-article__circle"></div>
+            <div className="charts-article__line first"></div>
+            <div className="charts-article__circle"></div>
+            <div className="charts-article__line second"></div>
+            <div className="charts-article__image-wrapper">
+              <img className="charts-article__default-image" src={temperatureDefaultImage} alt="default line Chart" />
+            </div>
+          </article>
+
         </section>
       </main>
 
