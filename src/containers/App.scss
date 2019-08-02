@@ -92,7 +92,6 @@
     width: 100vw;
 }
 .charts-article {
-    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,13 +125,13 @@
     background-color: $snowWhite;
     &.first__line-chart {
         width: 5px;
-        height: 100px;
+        height: 50px;
         animation-name: intro-vertical-first;
         animation-duration: 2s;
     }
     &.first__bar-chart {
         width: 5px;
-        height: 100px;
+        height: 50px;
     }
     @media all and (min-width:768px) {
         &.first__line-chart {
@@ -180,7 +179,7 @@
     }
   
     to {
-        height: 100px;
+        height: 50px;
     }
 }
 @keyframes intro-vertical-second {
