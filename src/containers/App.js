@@ -58,9 +58,7 @@ function App() {
           </article>
 
           <article className="charts-article">
-            <div className="charts-article__line second"></div>
             <div className="charts-article__line first__line-chart"></div>
-            <div className="charts-article__line second"></div>
             <div className="charts-article__line second"></div>
             <div className="charts-article__circle"></div>
             <div className="charts-article__line second"></div>

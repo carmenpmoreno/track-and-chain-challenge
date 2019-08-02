@@ -153,6 +153,26 @@
             animation-duration: 2s;
         }
     }
+    @media all and (min-width:1100px) {
+        &.first__line-chart {
+            height: 5px;
+            width: 150px;
+            animation-name: intro-first-laptop;
+            animation-duration: 3s;
+        }
+        &.first__bar-chart {
+            height: 5px;
+            width: 150px;
+            animation-name: intro-first-laptop;
+            animation-duration: 3s;
+        }
+        &.second {
+            height: 5px;
+            width: 100px;
+            animation-name: intro-second-laptop;
+            animation-duration: 2s;
+        }
+    }
 }
 
 @keyframes intro-first {
@@ -164,6 +184,15 @@
         width: 100px;
     }
 }
+@keyframes intro-first-laptop {
+    from {
+        width: 0;
+    }
+  
+    to {
+        width: 150px;
+    }
+}
 @keyframes intro-second {
     from {
         width: 0;
@@ -171,6 +200,15 @@
   
     to {
         width: 50px;
+    }
+}
+@keyframes intro-second-laptop {
+    from {
+        width: 0;
+    }
+  
+    to {
+        width: 100px;
     }
 }
 @keyframes intro-vertical-first {
