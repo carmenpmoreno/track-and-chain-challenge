@@ -20,13 +20,21 @@ function App() {
       </header>
       <main className="main-section">
         <nav className="charts-menu ">
-          <button className="charts-menu__button">
-            <img src={icoMenu} alt=""></img>
-          </button>
-          <ul className="charts-menu__list">
+          <ul className="  charts-menu__mobile">
             <li className="charts-menu__item">
               <i className="fas fa-chart-bar" alt="" />
-                Bar Chart
+            </li>
+            <li className="charts-menu__item">
+              <i className="fas fa-chart-line" alt="" />
+            </li>
+            <li className="charts-menu__item">
+              <i className="fas fa-table" alt="" />
+            </li>
+          </ul>
+          <ul className="charts-menu__tablet-desktop">
+            <li className="charts-menu__item">
+              <i className="fas fa-chart-bar" alt="" />
+              Bar Chart
             </li>
             <li className="charts-menu__item">
               <i className="fas fa-chart-line" alt="" />
@@ -34,40 +42,29 @@ function App() {
             </li>
             <li className="charts-menu__item">
               <i className="fas fa-table" alt="" />
-              Dat Table
+              Data Table
             </li>
           </ul>
-          {/* on default is hidden and shows the entire menu */}
-          <ul className="charts-menu__close hidden">
-            <li className="charts-menu__item">
-              <i className="fas fa-chart-bar" alt="" />
-            </li>
-            <li className="charts-menu__item">
-              <i className="fas fa-chart-line" alt="" />
-            </li>
-            <li className="charts-menu__item">
-              <i className="fas fa-table" alt="" />
-            </li>
-          </ul>
-          {/* .......................................... */}
         </nav>
         <section className="charts-section">
 
-          <article className="charts-article-2 item-2">
-            <div className="charts-article-2__line first"></div>
+          <article className="charts-article">
+            <div className="charts-article__line first__bar-chart "></div>
             <div className="charts-article__circle"></div>
-            <div className="charts-article-2__line second"></div>
+            <div className="charts-article__line second"></div>
             <div className="charts-article__image-wrapper">
               <img className="charts-article__default-image" src={barDefaultImage} alt="default Bar Chart" />
             </div>
           </article>
 
-          <article className="charts-article-2 item-3">
-            <div className="charts-article-2__line first"></div>
+          <article className="charts-article">
+            <div className="charts-article__line second"></div>
+            <div className="charts-article__line first__line-chart"></div>
+            <div className="charts-article__line second"></div>
+            <div className="charts-article__line second"></div>
             <div className="charts-article__circle"></div>
-            <div className="charts-article-2__line first"></div>
-            <div className="charts-article__circle"></div>
-            <div className="charts-article-2__line second"></div>
+            <div className="charts-article__line second"></div>
+            <div className="charts-article__line second"></div>
             <div className="charts-article__image-wrapper">
               <img className="charts-article__default-image" src={temperatureDefaultImage} alt="default line Chart" />
             </div>
