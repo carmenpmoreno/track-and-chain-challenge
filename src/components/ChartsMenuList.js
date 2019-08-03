@@ -3,27 +3,33 @@ import './ChartsMenuList.scss';
 import PropTypes from 'prop-types';
 
 class ChartsMenuList extends React.Component {
-    render() {
-        const {ulClassName, barChartTitle, lineChartTitle, dataChartTitle } = this.props;
-        return(
-            <ul className={ulClassName}>
-            <li className="charts-menu__item">
-              <i className="fas fa-chart-bar" alt="" />
-              {barChartTitle}
-            </li>
-            <li className="charts-menu__item">
-              <i className="fas fa-chart-line" alt="" />
-              {lineChartTitle}
-            </li>
-            <li className="charts-menu__item">
-              <i className="fas fa-table" alt="" />
-              {dataChartTitle}
-            </li>
-          </ul>
+  render() {
+    const { ulClassName, barChartTitle, lineChartTitle, dataChartTitle } = this.props;
+    return (
+      <ul className={ulClassName}>
+        <li>
+          <button className="charts-menu__button">
+            <i className="fas fa-chart-bar" alt="" />
+            {barChartTitle}
+          </button>
+        </li>
+        <li>
+          <button className="charts-menu__button">
+            <i className="fas fa-chart-line" alt="" />
+            {lineChartTitle}
+          </button>
+        </li>
+        <li>
+          <button className="charts-menu__button">
+            <i className="fas fa-table" alt="" />
+            {dataChartTitle}
+          </button>
+        </li>
+      </ul>
 
-        );
+    );
 
-    }
+  }
 }
 
 ChartsMenuList.propTypes = {
