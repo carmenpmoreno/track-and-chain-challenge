@@ -10,9 +10,9 @@ function App() {
       <header className="header-section">
         <h1 className="header-section__title">Dashboard</h1>
         <nav className="user-menu">
-          <div className="user-menu__item-wrapper">
+          {/* <div className="user-menu__item-wrapper"> */}
             <i className="fas fa-user-circle" alt="Default avatar" />
-          </div>
+          {/* </div> */}
           <button className="user-menu__button">
             <i className="fas fa-arrow-down" alt="" />
           </button>
