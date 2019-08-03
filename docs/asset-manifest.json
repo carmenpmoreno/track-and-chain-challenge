@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.83a84cde.chunk.css",
+    "main.js": "./static/js/main.ae22eb8b.chunk.js",
+    "main.js.map": "./static/js/main.ae22eb8b.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/js/2.179f4c70.chunk.js": "./static/js/2.179f4c70.chunk.js",
+    "static/js/2.179f4c70.chunk.js.map": "./static/js/2.179f4c70.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.edc3456b8adac2c25975d005db3fef7c.js": "./precache-manifest.edc3456b8adac2c25975d005db3fef7c.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.83a84cde.chunk.css.map": "./static/css/main.83a84cde.chunk.css.map",
+    "static/media/bar-chart.png": "./static/media/bar-chart.1bbcc61c.png",
+    "static/media/temperature-changes-chart.png": "./static/media/temperature-changes-chart.40bb8f7e.png"
+  }
+}
