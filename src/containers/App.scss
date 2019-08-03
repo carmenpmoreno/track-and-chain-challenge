@@ -65,6 +65,9 @@
 .charts-menu__mobile {
     display: block;
     width: 40px;
+    .charts-menu__item {
+        margin: 8px 0;
+    }
     .fas::before {
         font-size: 1.5em;
         color: $ligthColor;
