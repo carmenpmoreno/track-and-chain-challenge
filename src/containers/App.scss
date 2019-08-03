@@ -11,13 +11,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    .header-section__title {
+        margin-left: 10px;
+        font-size: 2em;
+        font-weight: $superBoldMainFontWeight;
+    }
 }
-.header-section__title {
-    margin-left: 10px;
-    font-size: 2em;
-    font-weight: $superBoldMainFontWeight;
-}
-// user-menu
+
 .user-menu {
     display: flex;
     flex-direction: row;
@@ -32,224 +32,30 @@
         color: $ligthColor;
         margin: 17px 10px;
     }
+    .user-menu__button {
+        background-color: $darkColor;
+        border: $darkColor;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 0;
+    }
 }
-.user-menu__button {
-    background-color: $darkColor;
-    border: $darkColor;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 0;
-}
+
 
 // MAIN
 
 .main-section {
     display: flex;
     flex-direction: row;
-}
-// chart-menu
-.charts-menu {
-    font-size: 1.3em;
-    font-weight: $boldMainFontWeight;
-    background-color: $darkColor;
-}
-.charts-menu__tablet-desktop, .charts-menu__mobile {
-    list-style: none;
-    height: 100vh;
-    padding: 0;
-    @media all and (min-width:768px)  {
-        padding: 10px;
+    .charts-menu {
+        font-size: 1.3em;
+        font-weight: $boldMainFontWeight;
+        background-color: $darkColor;
     }
-}
-.charts-menu__mobile {
-    display: block;
-    width: 40px;
-    .charts-menu__item {
-        margin: 8px 0;
-    }
-    .fas::before {
-        font-size: 1.5em;
-        color: $ligthColor;
-        padding: 6px;
-    }
-    @media all and (min-width:768px) {
-        display: none;
-    }
-}
-.charts-menu__tablet-desktop {
-    display: none;
-    @media all and (min-width:768px) {
-        display: block;
-        width: 110px;
-        margin: 0;
-        .charts-menu__item {
-            width: 100px;
-            display: flex;
-            flex-direction: row;
-            color: $ligthColor;
-            margin: 17px 0;
-        }
-        .fas::before {
-            font-size: 2em;
-            color: $ligthColor;
-            padding: 6px;
-        }
-    }
-}
-
-
-// charts-section
-.charts-section {
-    background-image: linear-gradient(180deg, $ligthColor 0%,$mainColor 40%);
-    width: 100vw;
-}
-.charts-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
-    @media all and (min-width:768px) {
-        height: 250px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0;
-    }
-    @media all and (min-width:1024px) {
-        height: 300px;
-    }
-
-}
-.charts-article__image-wrapper {
-    width: 260px;
-    @media all and (min-width:768px) {
-        width: 300px;
-    }
-    @media all and (min-width:1024px) {
-        width: 350px;
-    }
-}
-.charts-article__default-image {
-    width: 260px;
-    @media all and (min-width:768px) {
-        width: 300px;
-    }
-    @media all and (min-width:1024px) {
-        width: 350px;
-    }
-}
-.charts-article__circle {
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    background-color: $snowWhite;
-}
-.charts-article__line {
-    background-color: $snowWhite;
-    &.first__line-chart {
-        width: 5px;
-        height: 50px;
-        animation-name: intro-vertical-first;
-        animation-duration: 2s;
-    }
-    &.first__bar-chart {
-        width: 5px;
-        height: 50px;
-    }
-    @media all and (min-width:768px) {
-        &.first__line-chart {
-            height: 5px;
-            width: 100px;
-            animation-name: intro-first;
-            animation-duration: 3s;
-        }
-        &.first__bar-chart {
-            height: 5px;
-            width: 100px;
-            animation-name: intro-first;
-            animation-duration: 3s;
-        }
-        &.second {
-            height: 5px;
-            width: 50px;
-            animation-name: intro-second;
-            animation-duration: 2s;
-        }
-    }
-    @media all and (min-width:1024px) {
-        &.first__line-chart {
-            height: 5px;
-            width: 150px;
-            animation-name: intro-first-laptop;
-            animation-duration: 3s;
-        }
-        &.first__bar-chart {
-            height: 5px;
-            width: 150px;
-            animation-name: intro-first-laptop;
-            animation-duration: 3s;
-        }
-        &.second {
-            height: 5px;
-            width: 100px;
-            animation-name: intro-second-laptop;
-            animation-duration: 2s;
-        }
-    }
-}
-
-@keyframes intro-first {
-    from {
-        width: 0;
-    }
-  
-    to {
-        width: 100px;
-    }
-}
-@keyframes intro-first-laptop {
-    from {
-        width: 0;
-    }
-  
-    to {
-        width: 150px;
-    }
-}
-@keyframes intro-second {
-    from {
-        width: 0;
-    }
-  
-    to {
-        width: 50px;
-    }
-}
-@keyframes intro-second-laptop {
-    from {
-        width: 0;
-    }
-  
-    to {
-        width: 100px;
-    }
-}
-@keyframes intro-vertical-first {
-    from {
-        height: 0;
-    }
-  
-    to {
-        height: 50px;
-    }
-}
-@keyframes intro-vertical-second {
-    from {
-        height: 0;
-    }
-  
-    to {
-        height: 50px;
+    
+    .charts-section {
+        background-image: linear-gradient(180deg, $ligthColor 0%,$mainColor 40%);
+        width: 100vw;
     }
 }

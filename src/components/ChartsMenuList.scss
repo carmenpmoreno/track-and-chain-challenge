@@ -1,0 +1,45 @@
+@import '../scss/variables';
+
+.charts-menu__tablet-desktop, .charts-menu__mobile {
+    list-style: none;
+    height: 100vh;
+    padding: 0;
+    @media all and (min-width:768px)  {
+        padding: 10px;
+    }
+}
+.charts-menu__mobile {
+    display: block;
+    width: 40px;
+    .charts-menu__item {
+        margin: 8px 0;
+    }
+    .fas::before {
+        font-size: 1.5em;
+        color: $ligthColor;
+        padding: 6px;
+    }
+    @media all and (min-width:768px) {
+        display: none;
+    }
+}
+.charts-menu__tablet-desktop {
+    display: none;
+    @media all and (min-width:768px) {
+        display: block;
+        width: 110px;
+        margin: 0;
+        .charts-menu__item {
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            color: $ligthColor;
+            margin: 17px 0;
+        }
+        .fas::before {
+            font-size: 2em;
+            color: $ligthColor;
+            padding: 6px;
+        }
+    }
+}
