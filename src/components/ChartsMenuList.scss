@@ -11,13 +11,22 @@
 .charts-menu__mobile {
     display: block;
     width: 40px;
-    .charts-menu__item {
-        margin: 8px 0;
+    .fas {
+        padding: 6px 4px;
+        margin: 6px 2px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all .3s ease-in;
+        background-color: $darkColor;
+        color: $ligthColor;
+        box-shadow: 0 -2px $ligthColor inset;
+        &:hover{
+            box-shadow: 0 -40px $ligthColor inset;
+            color: $darkColor;
+        }
     }
     .fas::before {
         font-size: 1.5em;
-        color: $ligthColor;
-        padding: 6px;
     }
     @media all and (min-width:768px) {
         display: none;
@@ -27,18 +36,29 @@
     display: none;
     @media all and (min-width:768px) {
         display: block;
-        width: 110px;
+        width: 124px;
         margin: 0;
+        padding: 0;
         .charts-menu__item {
             width: 100px;
             display: flex;
             flex-direction: row;
             color: $ligthColor;
-            margin: 17px 0;
+            padding: 18px 3px;
+            margin: 9px 9px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all .3s ease-in;
+            background-color: $darkColor;
+            color: $ligthColor;
+            box-shadow: 0 -2px $ligthColor inset;
+            &:hover{
+                box-shadow: 0 -80px $ligthColor inset;
+                color: $darkColor;
+            }
         }
         .fas::before {
             font-size: 2em;
-            color: $ligthColor;
             padding: 6px;
         }
     }
