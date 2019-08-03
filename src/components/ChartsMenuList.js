@@ -1,5 +1,6 @@
 import React from 'react';
 import './ChartsMenuList.scss';
+import PropTypes from 'prop-types';
 
 class ChartsMenuList extends React.Component {
     render() {
@@ -23,6 +24,14 @@ class ChartsMenuList extends React.Component {
         );
 
     }
+}
+
+ChartsMenuList.propTypes = {
+  ulClassName: PropTypes.string.isRequired,
+  barChartTitle: PropTypes.string,
+  lineChartTitle: PropTypes.string,
+  dataChartTitle: PropTypes.string,
+
 }
 
 export default ChartsMenuList;

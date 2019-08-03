@@ -1,5 +1,6 @@
 import React from 'react';
 import './ChartArticle.scss';
+import PropTypes from 'prop-types';
 
 class ChartArticle extends React.Component {
     render() {
@@ -14,4 +15,10 @@ class ChartArticle extends React.Component {
         );
     }
 }
+
+ChartArticle.propTypes = {
+    firstLineClass: PropTypes.string.isRequired,
+    defaultImageText: PropTypes.string,
+}
+
 export default ChartArticle;
