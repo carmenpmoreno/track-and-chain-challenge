@@ -1,6 +1,7 @@
 import React from "react";
 import "./ChartsMenuList.scss";
 import PropTypes from "prop-types";
+import { Link } from 'react-router-dom';
 
 class ChartsMenuList extends React.Component {
   render() {
@@ -8,11 +9,13 @@ class ChartsMenuList extends React.Component {
       ulClassName,
       barChartTitle,
       lineChartTitle,
-      dataChartTitle
+      dataChartTitle,
+      data
     } = this.props;
     return (
       <ul className={ulClassName}>
         <li>
+        {/* <Link className="charts-menu__button__link" to={`/chart-detail/${item.id}`}></Link> */}
           <button className="charts-menu__button">
             <i className="fas fa-chart-bar" alt="" />
             {barChartTitle}

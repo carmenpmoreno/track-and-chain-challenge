@@ -1,11 +1,28 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
 import "./Main.scss";
 import ChartsMenuList from "../components/ChartsMenuList";
-import ChartArticle from "../components/ChartArticle";
-import barDefaultImage from "../images/bar-chart.png";
-import temperatureDefaultImage from "../images/temperature-changes-chart.png";
+import HomeChartsSection from "../components/HomeChartsSection";
+import ChartsDetail from "../components/ChartsDetail";
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [
+        {
+          chartId: "bar-chart",
+          className: "bar-chart__default-image",
+          defaultImageText: "default Bar Chart"
+        },
+        {
+          chartId: "line-chart",
+          className: "line-chart__default-image",
+          defaultImageText: "default Line Chart"
+        }
+      ]
+    };
+  }
   render() {
     return (
       <main className="main-section">
@@ -16,19 +33,22 @@ class Main extends React.Component {
             barChartTitle="Bar Chart"
             lineChartTitle="Line Chart"
             dataChartTitle="Data Chart"
+            data={this.state.data}
           />
         </nav>
         <section className="charts-section">
-          <ChartArticle
-            firstLineClass="first__bar-chart"
-            defaultImage={barDefaultImage}
-            defaultImageText="default Bar Chart"
-          />
-          <ChartArticle
-            firstLineClass="first__line-chart"
-            defaultImage={temperatureDefaultImage}
-            defaultImageText="default line Chart"
-          />
+          <Switch>
+            <Route exact path="/" render={() => <HomeChartsSection />} />
+            <Route
+              path="/chart-detail/:chartId"
+              render={routerProps => (
+                <ChartsDetail
+                  match={routerProps.match}
+                  data={this.state.data}
+                />
+              )}
+            />
+          </Switch>
         </section>
       </main>
     );
