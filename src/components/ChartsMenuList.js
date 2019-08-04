@@ -22,18 +22,7 @@ class ChartsMenuList extends React.Component {
                 </li>
               );
             })
-          : console.log("data aún no ha llegado por props")}
-        {ulClassName === "charts-menu__mobile" ? (
-          <li>
-            <Link className="charts-menu__button__link" to="/">
-              <ChartsMenuButton iconClassName="fas fa-home" />
-            </Link>
-          </li>
-        ) : (
-          console.log("no es menu-mobile")
-        )}
-        {ulClassName === "charts-menu__tablet-desktop"
-          ? data.map(item => {
+          : data.map(item => {
               return (
                 <li key={item.chartId}>
                   <Link
@@ -47,16 +36,20 @@ class ChartsMenuList extends React.Component {
                   </Link>
                 </li>
               );
-            })
-          : console.log("data aún no ha llegado por props")}
-        {ulClassName === "charts-menu__tablet-desktop" ? (
+            })}
+
+        {ulClassName === "charts-menu__mobile" ? (
+          <li>
+            <Link className="charts-menu__button__link" to="/">
+              <ChartsMenuButton iconClassName="fas fa-home" />
+            </Link>
+          </li>
+        ) : (
           <li>
             <Link className="charts-menu__button__link" to="/">
               <ChartsMenuButton iconClassName="fas fa-home" chartTitle="Menu" />
             </Link>
           </li>
-        ) : (
-          console.log("no es menu-tablet")
         )}
       </ul>
     );
