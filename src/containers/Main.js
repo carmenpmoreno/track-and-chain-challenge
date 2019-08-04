@@ -12,13 +12,24 @@ class Main extends React.Component {
       data: [
         {
           chartId: "bar-chart",
-          className: "bar-chart__default-image",
+          chartTitle: "Bar Chart",
+          detailClassName: "bar-chart__default-image",
+          buttonClassName: "fas fa-chart-bar",
           defaultImageText: "default Bar Chart"
         },
         {
           chartId: "line-chart",
-          className: "line-chart__default-image",
+          chartTitle: "Line Chart",
+          homeClassName: "line-chart__default-image",
+          buttonClassName: "fas fa-chart-line",
           defaultImageText: "default Line Chart"
+        },
+        {
+          chartId: "table-chart",
+          chartTitle: "Data Chart",
+          homeClassName: "line-chart__default-image",
+          buttonClassName: "fas fa-table",
+          defaultImageText: "default Table Chart"
         }
       ]
     };
@@ -27,12 +38,12 @@ class Main extends React.Component {
     return (
       <main className="main-section">
         <nav className="charts-menu ">
-          <ChartsMenuList ulClassName="charts-menu__mobile" />
+          <ChartsMenuList
+            ulClassName="charts-menu__mobile"
+            data={this.state.data}
+          />
           <ChartsMenuList
             ulClassName="charts-menu__tablet-desktop"
-            barChartTitle="Bar Chart"
-            lineChartTitle="Line Chart"
-            dataChartTitle="Data Chart"
             data={this.state.data}
           />
         </nav>

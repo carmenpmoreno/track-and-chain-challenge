@@ -1,38 +1,31 @@
 import React from "react";
 import "./ChartsMenuList.scss";
 import PropTypes from "prop-types";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 class ChartsMenuList extends React.Component {
   render() {
-    const {
-      ulClassName,
-      barChartTitle,
-      lineChartTitle,
-      dataChartTitle,
-      data
-    } = this.props;
+    const { ulClassName, data } = this.props;
+    console.log("data en menuList", data);
     return (
       <ul className={ulClassName}>
-        <li>
-        {/* <Link className="charts-menu__button__link" to={`/chart-detail/${item.id}`}></Link> */}
-          <button className="charts-menu__button">
-            <i className="fas fa-chart-bar" alt="" />
-            {barChartTitle}
-          </button>
-        </li>
-        <li>
-          <button className="charts-menu__button">
-            <i className="fas fa-chart-line" alt="" />
-            {lineChartTitle}
-          </button>
-        </li>
-        <li>
-          <button className="charts-menu__button">
-            <i className="fas fa-table" alt="" />
-            {dataChartTitle}
-          </button>
-        </li>
+        {data !== undefined
+          ? data.map(item => {
+              return (
+                <li key={item.chartId}>
+                  <Link
+                    className="charts-menu__button__link"
+                    to={`/chart-detail/${item.chartId}`}
+                  >
+                    <button className="charts-menu__button">
+                      <i className={item.buttonClassName} alt="" />
+                      {item.chartTitle}
+                    </button>
+                  </Link>
+                </li>
+              );
+            })
+          : console.log("data aún no ha llegado por props")}
       </ul>
     );
   }
