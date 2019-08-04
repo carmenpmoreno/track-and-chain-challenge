@@ -1,10 +1,15 @@
-import React from 'react';
-import './ChartsMenuList.scss';
-import PropTypes from 'prop-types';
+import React from "react";
+import "./ChartsMenuList.scss";
+import PropTypes from "prop-types";
 
 class ChartsMenuList extends React.Component {
   render() {
-    const { ulClassName, barChartTitle, lineChartTitle, dataChartTitle } = this.props;
+    const {
+      ulClassName,
+      barChartTitle,
+      lineChartTitle,
+      dataChartTitle
+    } = this.props;
     return (
       <ul className={ulClassName}>
         <li>
@@ -26,9 +31,7 @@ class ChartsMenuList extends React.Component {
           </button>
         </li>
       </ul>
-
     );
-
   }
 }
 
@@ -36,8 +39,7 @@ ChartsMenuList.propTypes = {
   ulClassName: PropTypes.string.isRequired,
   barChartTitle: PropTypes.string,
   lineChartTitle: PropTypes.string,
-  dataChartTitle: PropTypes.string,
-
-}
+  dataChartTitle: PropTypes.string
+};
 
 export default ChartsMenuList;
