@@ -1,9 +1,7 @@
 import React from "react";
 import "./ChartsDetail.scss";
 import PropTypes from "prop-types";
-import barDefaultImage from "../images/bar-chart.png";
-import BarChartDetail from "./BarChart";
-
+import BarChart from "./BarChart";
 import temperatureDefaultImage from "../images/temperature-changes-chart.png";
 import dataTableDefaultImage from "../images/data-table.png";
 
@@ -16,8 +14,8 @@ class ChartsDetail extends React.Component {
     return (
       <article className="charts-detail__article">
         {chartId === "bar-chart" ? (
-          <div className="chart-sankey-detail__wrapper">
-            <BarChartDetail />
+          <div className="bart-chart__wrapper">
+          <BarChart />
           </div>
         ) : (
           console.log("no es bar-chart")

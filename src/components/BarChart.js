@@ -7,13 +7,11 @@ class BarChart extends React.Component {
   componentDidMount() {
     let chart = am4core.create("sankey", am4charts.SankeyDiagram);
     chart.data = [
-      { from: "J", to: "F", value: 10 },
-      { from: "F", to: "Mar", value: 8 },
-      { from: "Mar", to: "Apr", value: 4 },
-      { from: "Apr", to: "May", value: 3 },
+      { from: "Apr", to: "May", value: 7 },
       { from: "May", to: "Jun", value: 5 },
       { from: "Jun", to: "Jul", value: 2 },
       { from: "Jul", to: "Aug", value: 3 },
+      { from: "Aug", to: "Sept", value: 1 },
     ];
 
     chart.dataFields.fromName = "from";
@@ -21,7 +19,7 @@ class BarChart extends React.Component {
     chart.dataFields.value = "value";
   }
   render() {
-    return <div id="sankey" />;
+    return <div id="sankey" className="bar-chart" />;
   }
 }
 

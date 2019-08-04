@@ -18,7 +18,7 @@ class ChartArticle extends React.Component {
             alt={defaultImageText}
           />
         ) : (
-          <div className="chart-sankey__wrapper">
+          <div className="bart-chart__wrapper">
             <BarChart />
           </div>
         )}
