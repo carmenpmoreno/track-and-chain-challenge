@@ -37,9 +37,11 @@
     text-decoration: none;
     transition: all 0.3s ease-in;
     background-color: $darkColor;
+    color: $ligthColor;
     box-shadow: 0 -2px $ligthColor inset;
     &:hover {
       box-shadow: 0 -40px $ligthColor inset;
+      color: $darkColor;
     }
   }
   .fas::before {
@@ -62,6 +64,7 @@
       width: 110px;
       display: flex;
       flex-direction: row;
+      color: $ligthColor;
       padding: 18px 3px;
       margin: 9px 9px;
       border-radius: 6px;

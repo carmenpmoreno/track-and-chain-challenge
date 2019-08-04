@@ -2,6 +2,7 @@ import React from "react";
 import "./ChartsMenuList.scss";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import ChartsMenuButton from "./ChartMenuButton";
 
 class ChartsMenuList extends React.Component {
   render() {
@@ -16,14 +17,21 @@ class ChartsMenuList extends React.Component {
                     className="charts-menu__button__link"
                     to={`/chart-detail/${item.chartId}`}
                   >
-                    <button className="charts-menu__button">
-                      <i className={item.buttonClassName} alt="" />
-                    </button>
+                    <ChartsMenuButton iconClassName={item.iconClassName} />
                   </Link>
                 </li>
               );
             })
           : console.log("data aún no ha llegado por props")}
+        {ulClassName === "charts-menu__mobile" ? (
+          <li>
+            <Link className="charts-menu__button__link" to="/">
+              <ChartsMenuButton iconClassName="fas fa-home" />
+            </Link>
+          </li>
+        ) : (
+          console.log("no es menu-mobile")
+        )}
         {ulClassName === "charts-menu__tablet-desktop"
           ? data.map(item => {
               return (
@@ -32,22 +40,24 @@ class ChartsMenuList extends React.Component {
                     className="charts-menu__button__link"
                     to={`/chart-detail/${item.chartId}`}
                   >
-                    <button className="charts-menu__button">
-                      <i className={item.buttonClassName} alt="" />
-                      {item.chartTitle}
-                    </button>
+                    <ChartsMenuButton
+                      iconClassName={item.iconClassName}
+                      chartTitle={item.chartTitle}
+                    />
                   </Link>
                 </li>
               );
             })
           : console.log("data aún no ha llegado por props")}
-        <li>
-          <button className="charts-menu__button">
+        {ulClassName === "charts-menu__tablet-desktop" ? (
+          <li>
             <Link className="charts-menu__button__link" to="/">
-              Menu Principal
+              <ChartsMenuButton iconClassName="fas fa-home" chartTitle="Menu" />
             </Link>
-          </button>
-        </li>
+          </li>
+        ) : (
+          console.log("no es menu-tablet")
+        )}
       </ul>
     );
   }

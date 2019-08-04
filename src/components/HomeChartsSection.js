@@ -1,7 +1,6 @@
 import React from "react";
 import "./HomeChartsSection.scss";
 import ChartArticle from "../components/ChartArticle";
-import barDefaultImage from "../images/bar-chart.png";
 import temperatureDefaultImage from "../images/temperature-changes-chart.png";
 
 class HomeChartsSection extends React.Component {

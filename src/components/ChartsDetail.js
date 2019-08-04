@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import BarChart from "./BarChart";
 import temperatureDefaultImage from "../images/temperature-changes-chart.png";
 import dataTableDefaultImage from "../images/data-table.png";
-import {Link} from 'react-router-dom';
 
 class ChartsDetail extends React.Component {
   render() {

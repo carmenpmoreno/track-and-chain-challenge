@@ -14,8 +14,7 @@ class Main extends React.Component {
           chartId: "bar-chart",
           chartTitle: "Bar Chart",
           detailClassName: "bar-chart__default-image",
-          detailClassName: "bar-chart__default-image-detail",
-          buttonClassName: "fas fa-chart-bar",
+          iconClassName: "fas fa-chart-bar",
           defaultImageText: "default Bar Chart"
         },
         {
@@ -23,7 +22,7 @@ class Main extends React.Component {
           chartTitle: "Line Chart",
           homeClassName: "line-chart__default-image",
           detailClassName: "line-chart__default-image-detail",
-          buttonClassName: "fas fa-chart-line",
+          iconClassName: "fas fa-chart-line",
           defaultImageText: "default Line Chart"
         },
         {
@@ -31,7 +30,7 @@ class Main extends React.Component {
           chartTitle: "Data Chart",
           homeClassName: "data-chart__default-image",
           detailClassName: "data-chart__default-image-detail",
-          buttonClassName: "fas fa-table",
+          iconClassName: "fas fa-table",
           defaultImageText: "default Table Chart"
         }
       ]
