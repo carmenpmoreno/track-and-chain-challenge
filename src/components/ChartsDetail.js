@@ -1,5 +1,6 @@
 import React from "react";
 import "./ChartsDetail.scss";
+import PropTypes from "prop-types";
 import barDefaultImage from "../images/bar-chart.png";
 import temperatureDefaultImage from "../images/temperature-changes-chart.png";
 import dataTableDefaultImage from "../images/data-table.png";
@@ -7,10 +8,7 @@ import dataTableDefaultImage from "../images/data-table.png";
 class ChartsDetail extends React.Component {
   render() {
     const { data, match } = this.props;
-    console.log('data en detail', data);
-
     const chartId = match.params.chartId;
-    console.log(chartId);
     const item = data.find(item => item.chartId === chartId);
 
     return (
@@ -46,5 +44,8 @@ class ChartsDetail extends React.Component {
     );
   }
 }
-
+ChartsDetail.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object),
+  match: PropTypes.object
+};
 export default ChartsDetail;
