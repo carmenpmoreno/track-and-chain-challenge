@@ -41,6 +41,13 @@ class ChartsMenuList extends React.Component {
               );
             })
           : console.log("data aún no ha llegado por props")}
+        <li>
+          <button className="charts-menu__button">
+            <Link className="charts-menu__button__link" to="/">
+              Menu Principal
+            </Link>
+          </button>
+        </li>
       </ul>
     );
   }
