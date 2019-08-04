@@ -1,5 +1,7 @@
 Web Dashboard mockup
 
+To install the charts on the proyect run `npm install @amcharts/amcharts4`.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

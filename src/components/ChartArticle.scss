@@ -17,6 +17,14 @@
     }
 
 }
+.chart-sankey__wrapper {
+    width: 240px;
+    padding: 10px;
+    background-color: #fff;
+    @media all and (min-width: 768px) {
+        width: 460px;
+    }
+}
 .charts-article__default-image {
     width: 260px;
     @media all and (min-width:768px) {

@@ -10,8 +10,8 @@ class HomeChartsSection extends React.Component {
       <>
         <ChartArticle
           firstLineClass="first__bar-chart"
-          defaultImage={barDefaultImage}
-          defaultImageText="default Bar Chart"
+          // defaultImage={barDefaultImage}
+          // defaultImageText="default Bar Chart"
         />
         <ChartArticle
           firstLineClass="first__line-chart"
