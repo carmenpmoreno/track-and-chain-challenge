@@ -2,6 +2,8 @@ import React from "react";
 import "./ChartsDetail.scss";
 import PropTypes from "prop-types";
 import barDefaultImage from "../images/bar-chart.png";
+import BarChartDetail from "./BarChart";
+
 import temperatureDefaultImage from "../images/temperature-changes-chart.png";
 import dataTableDefaultImage from "../images/data-table.png";
 
@@ -12,13 +14,11 @@ class ChartsDetail extends React.Component {
     const item = data.find(item => item.chartId === chartId);
 
     return (
-      <>
+      <article className="charts-detail__article">
         {chartId === "bar-chart" ? (
-          <img
-            className={item.detailClassName}
-            src={barDefaultImage}
-            alt={item.defaultImageText}
-          />
+          <div className="chart-sankey-detail__wrapper">
+            <BarChartDetail />
+          </div>
         ) : (
           console.log("no es bar-chart")
         )}
@@ -40,7 +40,7 @@ class ChartsDetail extends React.Component {
         ) : (
           console.log("no es table-chart")
         )}
-      </>
+      </article>
     );
   }
 }

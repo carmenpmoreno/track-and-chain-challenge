@@ -1,0 +1,10 @@
+#sankey {
+    width: 240px;
+    @media all and (min-width: 768px) {
+        width: 280px;
+    }
+    @media all and (min-width: 1024px) {
+        width: 440px;
+
+    }
+}

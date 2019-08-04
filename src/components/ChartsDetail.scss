@@ -1,0 +1,32 @@
+.charts-detail__article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.chart-sankey-detail__wrapper {
+    width: 240px;
+    padding: 10px;
+    background-color: #fff;
+    @media all and (min-width: 768px) {
+        width: 460px;
+    }
+}
+.bar-chart__default-image-detail, .line-chart__default-image-detail {
+    width: 240px;
+    @media all and (min-width: 768px) {
+        width: 460px;
+    }
+    @media all and (min-width: 1024px) {
+        width: 560px;
+    }
+}
+.data-chart__default-image-detail {
+    width: 240px;
+    @media all and (min-width: 768px) {
+        width: 660px;
+    }
+    @media all and (min-width: 1024px) {
+        width: 860px;
+    }
+}

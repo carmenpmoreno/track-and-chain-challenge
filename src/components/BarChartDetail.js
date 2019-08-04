@@ -1,9 +1,9 @@
 import React from "react";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
-import './SankeyDiagram.scss';
+import './BarChartDetail.scss';
 
-class SankeyDiagram extends React.Component {
+class SankeyDiagramDetail extends React.Component {
   componentDidMount() {
     let chart = am4core.create("sankey", am4charts.SankeyDiagram);
     chart.data = [
@@ -25,4 +25,4 @@ class SankeyDiagram extends React.Component {
   }
 }
 
-export default SankeyDiagram;
+export default SankeyDiagramDetail;

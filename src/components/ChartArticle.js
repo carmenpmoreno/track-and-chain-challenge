@@ -1,7 +1,7 @@
 import React from "react";
 import "./ChartArticle.scss";
 import PropTypes from "prop-types";
-import SankeyDiagram from "./SankeyDiagram";
+import BarChart from "./BarChart";
 
 class ChartArticle extends React.Component {
   render() {
@@ -19,7 +19,7 @@ class ChartArticle extends React.Component {
           />
         ) : (
           <div className="chart-sankey__wrapper">
-            <SankeyDiagram />
+            <BarChart />
           </div>
         )}
       </article>

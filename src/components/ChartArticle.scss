@@ -22,7 +22,11 @@
     padding: 10px;
     background-color: #fff;
     @media all and (min-width: 768px) {
-        width: 460px;
+        width: 300px;
+    }
+    @media all and (min-width: 1024px) {
+        width: 440px;
+
     }
 }
 .charts-article__default-image {
