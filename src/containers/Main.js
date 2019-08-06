@@ -13,9 +13,9 @@ class Main extends React.Component {
         {
           chartId: "bar-chart",
           chartTitle: "Bar Chart",
-          detailClassName: "bar-chart__default-image",
+          // detailClassName: "bar-chart__default-image",
           iconClassName: "fas fa-chart-bar",
-          defaultImageText: "default Bar Chart"
+          // defaultImageText: "default Bar Chart"
         },
         {
           chartId: "line-chart",
