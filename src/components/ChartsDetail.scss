@@ -1,16 +1,29 @@
 .charts-detail__article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
 }
-// .pie-chart__default-image-detail, .bar-chart__default-image-detail, .line-chart__default-image-detail, .data-chart__default-image-detail {
-.default-image-detail{  
-    width: 240px;
-    @media all and (min-width: 768px) {
-        width: 460px;
-    }
-    @media all and (min-width: 1024px) {
-        width: 560px;
-    }
+.default-image-detail {
+  width: 240px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  @media all and (min-width: 768px) {
+    width: 580px;
+  }
+}
+.pie-chart-image {
+  width: 140px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  @media all and (min-width: 768px) {
+    width: 400px;
+  }
+  @media all and (min-width: 1024px) {
+    width: 400px;
+  }
 }

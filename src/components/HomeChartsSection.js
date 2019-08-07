@@ -10,7 +10,7 @@ class HomeChartsSection extends React.Component {
     return (
       <>
         <article className="home-chart__article ">
-          <div className="bart-chart__wrapper">
+          <div className="chart__wrapper">
             <BarChart />
           </div>
         </article>

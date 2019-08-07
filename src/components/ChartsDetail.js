@@ -3,7 +3,7 @@ import "./ChartsDetail.scss";
 import PropTypes from "prop-types";
 import temperatureDefaultImage from "../images/temperature-changes-chart.png";
 import dataTableDefaultImage from "../images/data-table.png";
-import pieChartDefaultImage from "../images/pie-chart.png";
+import pieChartDefaultImage from "../images/pie-chart-2.png";
 
 class ChartsDetail extends React.Component {
   render() {
@@ -15,29 +15,35 @@ class ChartsDetail extends React.Component {
       <>
         <article className="charts-detail__article">
           {chartId === "pie-chart" ? (
-            <img
-              className="default-image-detail"
-              src={pieChartDefaultImage}
-              alt={item.defaultImageText}
-            />
+            <div className="chart__wrapper">
+              <img
+                className="pie-chart-image"
+                src={pieChartDefaultImage}
+                alt={item.defaultImageText}
+              />
+            </div>
           ) : (
             console.log("no es line-chart")
           )}
           {chartId === "line-chart" ? (
-            <img
-              className="default-image-detail"
-              src={temperatureDefaultImage}
-              alt={item.defaultImageText}
-            />
+            <div className="chart__wrapper">
+              <img
+                className="default-image-detail"
+                src={temperatureDefaultImage}
+                alt={item.defaultImageText}
+              />
+            </div>
           ) : (
             console.log("no es line-chart")
           )}
           {chartId === "table-chart" ? (
-            <img
-              className="default-image-detail"
-              src={dataTableDefaultImage}
-              alt={item.defaultImageText}
-            />
+            <div className="chart__wrapper">
+              <img
+                className="default-image-detail"
+                src={dataTableDefaultImage}
+                alt={item.defaultImageText}
+              />
+            </div>
           ) : (
             console.log("no es table-chart")
           )}
