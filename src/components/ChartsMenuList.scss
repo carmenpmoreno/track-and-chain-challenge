@@ -9,7 +9,7 @@
 .charts-menu__list {
   list-style: none;
   padding: 0;
-  margin: 5px;
+  margin: 5px 0 0 0;
   width: 320px;
   display: flex;
   flex-direction: row;
@@ -18,7 +18,6 @@
     font-size: 1.8em;
   }
   @media all and (min-width: 768px) {
-    padding: 5px;
     width: 720px;
     .fas::before {
       font-size: 2em;
@@ -29,7 +28,6 @@
       font-size: 2.5em;
     }
   }
-
 }
 
 .charts-menu__button__link {

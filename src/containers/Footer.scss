@@ -2,19 +2,27 @@
 
 .footer-section {
   min-width: 100%;
-  height: 5%;
+  height: 8%;
   background-color: $darkColor;
   color: $mainColorLighter;
-  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-weight: $regularMainFontWeight;
+  text-align: center;
   .footer-section__copy {
-    margin: 9px;
+    margin: 5px 9px;
   }
   .footer-section__p {
     font-size: 1em;
     margin: 9px;
+  }
+  @media all and (min-width: 768px) {
+    .footer-section__copy {
+      margin: 22px;
+    }
+    .footer-section__p {
+      margin: 20px;
+    }
   }
 }
