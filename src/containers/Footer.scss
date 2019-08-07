@@ -1,0 +1,20 @@
+@import "../scss/variables";
+
+.footer-section {
+  min-width: 100%;
+  height: 5%;
+  background-color: $darkColor;
+  color: $mainColorLighter;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: $regularMainFontWeight;
+  .footer-section__copy {
+    margin: 9px;
+  }
+  .footer-section__p {
+    font-size: 1em;
+    margin: 9px;
+  }
+}
