@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.f24ab40e.chunk.css",
+    "main.css": "./static/css/main.a892318c.chunk.css",
     "main.js": "./static/js/main.97ace22d.chunk.js",
     "main.js.map": "./static/js/main.97ace22d.chunk.js.map",
     "runtime~main.js": "./static/js/runtime~main.125c881d.js",
@@ -16,9 +16,9 @@
     "static/js/6.76a4b5e4.chunk.js": "./static/js/6.76a4b5e4.chunk.js",
     "static/js/6.76a4b5e4.chunk.js.map": "./static/js/6.76a4b5e4.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.a066fbcd3dcba4868468c54028f93a3a.js": "./precache-manifest.a066fbcd3dcba4868468c54028f93a3a.js",
+    "precache-manifest.d22a5f62fc2af0d10fb79a3857859aa8.js": "./precache-manifest.d22a5f62fc2af0d10fb79a3857859aa8.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.f24ab40e.chunk.css.map": "./static/css/main.f24ab40e.chunk.css.map",
+    "static/css/main.a892318c.chunk.css.map": "./static/css/main.a892318c.chunk.css.map",
     "static/media/data-table.png": "./static/media/data-table.b3dd8c8f.png",
     "static/media/temperature-changes-chart.png": "./static/media/temperature-changes-chart.40bb8f7e.png"
   }
