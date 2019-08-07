@@ -33,13 +33,24 @@ class Main extends React.Component {
         }
       ]
     };
+    this.handleButtonClick = this.handleButtonClick.bind(this);
+  }
+
+  handleButtonClick(event) {
+    const buttonList = document.querySelectorAll(".charts-menu__button");
+    console.log(buttonList);
+      for (const button of buttonList) {
+        button.classList.remove("checked-button");
+      }
+      event.currentTarget.classList.add("checked-button");
   }
   render() {
     return (
       <main className="main-section">
-          <ChartsMenuList
-            data={this.state.data}
-          />
+        <ChartsMenuList
+          data={this.state.data}
+          handleButtonClick={this.handleButtonClick}
+        />
         <section className="charts-section">
           <Switch>
             <Route exact path="/" render={() => <HomeChartsSection />} />

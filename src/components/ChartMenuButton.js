@@ -1,13 +1,13 @@
 import React from "react";
-// import "./ChartsMenuButton.scss";
+import "./ChartMenuButton.scss";
 import PropTypes from "prop-types";
 
 class ChartsMenuButton extends React.Component {
   render() {
-    const { iconClassName, chartTitle } = this.props;
+    const { iconClassName, chartTitle, handleButtonClick } = this.props;
     console.log(chartTitle);
     return (
-      <button className="charts-menu__button">
+      <button className="charts-menu__button" onClick={handleButtonClick}>
         <i className={iconClassName} alt={chartTitle} />
       </button>
     );
@@ -15,8 +15,8 @@ class ChartsMenuButton extends React.Component {
 }
 
 ChartsMenuButton.propTypes = {
-    iconClassName: PropTypes.string.isRequired,
-    chartTitle: PropTypes.string,
+  iconClassName: PropTypes.string.isRequired,
+  chartTitle: PropTypes.string
 };
 
 export default ChartsMenuButton;

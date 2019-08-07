@@ -6,24 +6,32 @@ import ChartsMenuButton from "./ChartMenuButton";
 
 class ChartsMenuList extends React.Component {
   render() {
-    const { data } = this.props;
-    console.log(data);
+    const { data, handleButtonClick } = this.props;
+    console.log(handleButtonClick);
     return (
       <nav className="charts-menu ">
         <ul className="charts-menu__list">
-          <li>
+          <li className="charts-menu__item">
             <Link className="charts-menu__button__link" to="/">
-              <ChartsMenuButton iconClassName="fas fa-chart-bar" chartTitle="Bar chart" />
+              <ChartsMenuButton
+                iconClassName="fas fa-chart-bar"
+                chartTitle="Bar chart"
+                handleButtonClick={handleButtonClick}
+              />
             </Link>
           </li>
           {data.map(item => {
             return (
-              <li key={item.chartId}>
+              <li className="charts-menu__item" key={item.chartId}>
                 <Link
                   className="charts-menu__button__link"
                   to={`/chart-detail/${item.chartId}`}
                 >
-                  <ChartsMenuButton iconClassName={item.iconClassName} chartTitle={item.chartTitle}/>
+                  <ChartsMenuButton
+                    iconClassName={item.iconClassName}
+                    chartTitle={item.chartTitle}
+                    handleButtonClick={handleButtonClick}
+                  />
                 </Link>
               </li>
             );
