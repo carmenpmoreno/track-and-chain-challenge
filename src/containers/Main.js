@@ -11,17 +11,16 @@ class Main extends React.Component {
     this.state = {
       data: [
         {
-          chartId: "bar-chart",
-          chartTitle: "Bar Chart",
-          // detailClassName: "bar-chart__default-image",
-          iconClassName: "fas fa-chart-bar",
-          // defaultImageText: "default Bar Chart"
+          chartId: "pie-chart",
+          chartTitle: "Pie Chart",
+          homeClassName: "pie-chart__default-image",
+          iconClassName: "fas fa-chart-pie",
+          defaultImageText: "default Pie Chart"
         },
         {
           chartId: "line-chart",
           chartTitle: "Line Chart",
           homeClassName: "line-chart__default-image",
-          detailClassName: "line-chart__default-image-detail",
           iconClassName: "fas fa-chart-line",
           defaultImageText: "default Line Chart"
         },
@@ -29,7 +28,6 @@ class Main extends React.Component {
           chartId: "table-chart",
           chartTitle: "Data Chart",
           homeClassName: "data-chart__default-image",
-          detailClassName: "data-chart__default-image-detail",
           iconClassName: "fas fa-table",
           defaultImageText: "default Table Chart"
         }
@@ -39,16 +37,9 @@ class Main extends React.Component {
   render() {
     return (
       <main className="main-section">
-        <nav className="charts-menu ">
           <ChartsMenuList
-            ulClassName="charts-menu__mobile"
             data={this.state.data}
           />
-          <ChartsMenuList
-            ulClassName="charts-menu__tablet-desktop"
-            data={this.state.data}
-          />
-        </nav>
         <section className="charts-section">
           <Switch>
             <Route exact path="/" render={() => <HomeChartsSection />} />

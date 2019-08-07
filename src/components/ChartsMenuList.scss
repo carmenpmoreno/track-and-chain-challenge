@@ -1,105 +1,76 @@
 @import "../scss/variables";
 
-.charts-menu__tablet-desktop,
-.charts-menu__mobile {
+.charts-menu {
+  background-color: $mainColorLighter;
+  display: flex;
+  justify-content: center;
+}
+
+.charts-menu__list {
   list-style: none;
-  height: 100vh;
   padding: 0;
-  @media all and (min-width: 768px) {
-    padding: 10px;
-  }
-}
-.charts-menu__button {
-  border: $darkColor;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  margin: 0;
-}
-.charts-menu__button__link {
-    cursor: pointer;
-    text-decoration: none;
-    color: $ligthColor;
-    &:hover {
-      color: $darkColor;
-    }
-}
-.charts-menu__mobile {
-  // display: block;
-  // width: 40px;
+  width: 320px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  // width: 130px;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  flex-direction: row;
-  height: 60px;
-  .charts-menu__button {
-    width: 40px;
-    height: 40px;
-    padding: 10px 10px;
-    margin: 6px 2px;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: all 0.3s ease-in;
-    background-color: $darkColor;
-    color: $ligthColor;
-    box-shadow: 0 -2px $ligthColor inset;
-    &:hover {
-      box-shadow: 0 -40px $ligthColor inset;
-      color: $darkColor;
-    }
-  }
   .fas::before {
     font-size: 1.8em;
   }
   @media all and (min-width: 768px) {
-    display: none;
-  }
-}
-.charts-menu__tablet-desktop {
-  display: none;
-  @media all and (min-width: 768px) {
-    // display: block;
-    // width: 130px;
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    // width: 130px;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    .charts-menu__button {
-      font-weight: $boldMainFontWeight;
-      font-size: 1em;
-      width: 110px;
-      display: flex;
-      flex-direction: row;
-      color: $ligthColor;
-      padding: 18px 3px;
-      margin: 9px 9px;
-      // border-radius: 6px;
-      border-radius: 50%;
-      text-decoration: none;
-      transition: all 0.3s ease-in;
-      background-color: $darkColor;
-      color: $ligthColor;
-      box-shadow: 0 -2px $ligthColor inset;
-      &:hover {
-        box-shadow: 0 -80px $ligthColor inset;
-        color: $darkColor;
-      }
-    }
+    padding: 10px;
+    width: 720px;
     .fas::before {
       font-size: 2em;
-      padding: 6px;
     }
+  }
+  @media all and (min-width: 1024px) {
+    width: 1000px;
+    padding: 20px;
+    .fas::before {
+      font-size: 2.5em;
+    }
+
+  }
+
+}
+
+.charts-menu__button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px;
+  margin: 6px 2px;
+  border: $darkColor;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+  background-color: $darkColor;
+  color: $ligthColor;
+  box-shadow: 0 -2px $ligthColor inset;
+  &:hover {
+    box-shadow: 0 -40px $ligthColor inset;
+    color: $darkColor;
+  }
+  
+  @media all and (min-width: 768px) {
+    font-size: 1em;
+    width: 80px;
+    height: 80px;
+    padding: 18px;
+    margin: 9px;
+    &:hover {
+      box-shadow: 0 -80px $ligthColor inset;
+    }
+  }
+}
+
+.charts-menu__button__link {
+  cursor: pointer;
+  text-decoration: none;
+  color: $ligthColor;
+  &:hover {
+    color: $darkColor;
   }
 }

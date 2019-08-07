@@ -4,7 +4,8 @@
     align-items: center;
     height: 70vh;
 }
-.bar-chart__default-image-detail, .line-chart__default-image-detail, .data-chart__default-image-detail {
+// .pie-chart__default-image-detail, .bar-chart__default-image-detail, .line-chart__default-image-detail, .data-chart__default-image-detail {
+.default-image-detail{  
     width: 240px;
     @media all and (min-width: 768px) {
         width: 460px;

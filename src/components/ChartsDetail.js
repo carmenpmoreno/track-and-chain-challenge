@@ -1,9 +1,9 @@
 import React from "react";
 import "./ChartsDetail.scss";
 import PropTypes from "prop-types";
-import BarChart from "./BarChart";
 import temperatureDefaultImage from "../images/temperature-changes-chart.png";
 import dataTableDefaultImage from "../images/data-table.png";
+import pieChartDefaultImage from "../images/pie-chart.png";
 
 class ChartsDetail extends React.Component {
   render() {
@@ -14,16 +14,18 @@ class ChartsDetail extends React.Component {
     return (
       <>
         <article className="charts-detail__article">
-          {chartId === "bar-chart" ? (
-            <div className="bart-chart__wrapper">
-              <BarChart />
-            </div>
+          {chartId === "pie-chart" ? (
+            <img
+              className="default-image-detail"
+              src={pieChartDefaultImage}
+              alt={item.defaultImageText}
+            />
           ) : (
-            console.log("no es bar-chart")
+            console.log("no es line-chart")
           )}
           {chartId === "line-chart" ? (
             <img
-              className={item.detailClassName}
+              className="default-image-detail"
               src={temperatureDefaultImage}
               alt={item.defaultImageText}
             />
@@ -32,7 +34,7 @@ class ChartsDetail extends React.Component {
           )}
           {chartId === "table-chart" ? (
             <img
-              className={item.detailClassName}
+              className="default-image-detail"
               src={dataTableDefaultImage}
               alt={item.defaultImageText}
             />

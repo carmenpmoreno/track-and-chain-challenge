@@ -5,10 +5,10 @@ import PropTypes from "prop-types";
 class ChartsMenuButton extends React.Component {
   render() {
     const { iconClassName, chartTitle } = this.props;
+    console.log(chartTitle);
     return (
       <button className="charts-menu__button">
-        <i className={iconClassName} alt="" />
-        {chartTitle}
+        <i className={iconClassName} alt={chartTitle} />
       </button>
     );
   }
