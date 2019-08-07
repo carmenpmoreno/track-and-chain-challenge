@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   .header-section__title {
-    margin-left: 9px;
+    margin: 4px 9px;
     font-size: 1em;
     font-weight: $regularMainFontWeight;
     @media all and (min-width: 768px) {
