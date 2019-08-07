@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5ebb4ba2.chunk.css",
+    "main.js": "./static/js/main.97ace22d.chunk.js",
+    "main.js.map": "./static/js/main.97ace22d.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.125c881d.js",
+    "runtime~main.js.map": "./static/js/runtime~main.125c881d.js.map",
+    "xlsx.js": "./static/js/xlsx.2600a8d5.chunk.js",
+    "xlsx.js.map": "./static/js/xlsx.2600a8d5.chunk.js.map",
+    "static/js/3.a5fde19e.chunk.js": "./static/js/3.a5fde19e.chunk.js",
+    "static/js/3.a5fde19e.chunk.js.map": "./static/js/3.a5fde19e.chunk.js.map",
+    "static/js/4.7fb385c9.chunk.js": "./static/js/4.7fb385c9.chunk.js",
+    "static/js/4.7fb385c9.chunk.js.map": "./static/js/4.7fb385c9.chunk.js.map",
+    "static/js/5.c8af42d2.chunk.js": "./static/js/5.c8af42d2.chunk.js",
+    "static/js/5.c8af42d2.chunk.js.map": "./static/js/5.c8af42d2.chunk.js.map",
+    "static/js/6.76a4b5e4.chunk.js": "./static/js/6.76a4b5e4.chunk.js",
+    "static/js/6.76a4b5e4.chunk.js.map": "./static/js/6.76a4b5e4.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.e63510f5a05504732eb2a6f0a71ac613.js": "./precache-manifest.e63510f5a05504732eb2a6f0a71ac613.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.5ebb4ba2.chunk.css.map": "./static/css/main.5ebb4ba2.chunk.css.map",
+    "static/media/data-table.png": "./static/media/data-table.b3dd8c8f.png",
+    "static/media/temperature-changes-chart.png": "./static/media/temperature-changes-chart.40bb8f7e.png"
+  }
+}
