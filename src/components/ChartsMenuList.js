@@ -14,6 +14,7 @@ class ChartsMenuList extends React.Component {
           <li className="charts-menu__item">
             <Link className="charts-menu__button__link" to="/">
               <ChartsMenuButton
+                secondClassName="checked-button"
                 iconClassName="fas fa-chart-bar"
                 chartTitle="Bar chart"
                 handleButtonClick={handleButtonClick}

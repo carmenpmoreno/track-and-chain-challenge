@@ -4,12 +4,28 @@ import PropTypes from "prop-types";
 
 class ChartsMenuButton extends React.Component {
   render() {
-    const { iconClassName, chartTitle, handleButtonClick } = this.props;
+    const {
+      iconClassName,
+      chartTitle,
+      handleButtonClick,
+      secondClassName
+    } = this.props;
     console.log(chartTitle);
     return (
-      <button className="charts-menu__button" onClick={handleButtonClick}>
-        <i className={iconClassName} alt={chartTitle} />
-      </button>
+      <>
+        {chartTitle === "Bar chart" ? (
+          <button
+            className={`charts-menu__button ${secondClassName}`}
+            onClick={handleButtonClick}
+          >
+            <i className={iconClassName} alt={chartTitle} />
+          </button>
+        ) : (
+          <button className="charts-menu__button" onClick={handleButtonClick}>
+            <i className={iconClassName} alt={chartTitle} />
+          </button>
+        )}
+      </>
     );
   }
 }

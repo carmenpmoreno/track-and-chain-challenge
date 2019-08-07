@@ -38,7 +38,6 @@ class Main extends React.Component {
 
   handleButtonClick(event) {
     const buttonList = document.querySelectorAll(".charts-menu__button");
-    console.log(buttonList);
       for (const button of buttonList) {
         button.classList.remove("checked-button");
       }
