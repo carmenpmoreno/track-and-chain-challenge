@@ -1,40 +1,41 @@
-@import '../scss/variables';
+@import "../scss/variables";
 
 .header-section {
-    min-width: 100%;
-    height: 5%;
-    background-color: $snowWhite;
-    color: $darkColor;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .header-section__title {
-        margin-left: 5px;
-        font-size: 1em;
-        font-weight: $regularMainFontWeight;
-    }
+  min-width: 100%;
+  height: 5%;
+  background-color: $snowWhite;
+  color: $darkColor;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .header-section__title {
+    margin-left: 5px;
+    font-size: 1em;
+    font-weight: $regularMainFontWeight;
+  }
 }
 
 .user-menu {
-    display: flex;
-    flex-direction: row;
-    .fas{
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
+  display: flex;
+  flex-direction: row;
+  .fas {
+    font-size: 1.5em;
+    color: $ligthColor;
+    margin: 5px;
+  }
+  .user-menu__button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    background-color: $snowWhite;
+    border: $snowWhite;
+    outline: $snowWhite;
+    color: $ligthColor;
+    &:hover {
+      .fas {
+        color: $darkColor;
+      }
     }
-    .fas::before {
-        font-size: 2.5em;
-        color: $ligthColor;
-        margin: 17px 10px;
-    }
-    .user-menu__button {
-        background-color: $darkColor;
-        border: $darkColor;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        padding: 0;
-    }
+  }
 }
